@@ -1,0 +1,197 @@
+{
+  "robots": [
+    {
+      "x": 1,
+      "y": 1,
+      "_prev_x": 1,
+      "_prev_y": 1,
+      "_prev_orientation": 3,
+      "objects": {},
+      "_orientation": 0,
+      "_is_leaky": true,
+      "_trace_history": [
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 70,
+          "x": 70,
+          "prev_y": 410,
+          "y": 400,
+          "grid_x": 1,
+          "grid_y": 1
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 70,
+          "x": 70,
+          "prev_y": 410,
+          "y": 360,
+          "grid_x": 1,
+          "grid_y": 2
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 70,
+          "x": 60,
+          "prev_y": 360,
+          "y": 360,
+          "grid_x": 1,
+          "grid_y": 2
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 60,
+          "x": 60,
+          "prev_y": 360,
+          "y": 370,
+          "grid_x": 1,
+          "grid_y": 2
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 60,
+          "x": 70,
+          "prev_y": 370,
+          "y": 370,
+          "grid_x": 1,
+          "grid_y": 2
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 60,
+          "x": 110,
+          "prev_y": 370,
+          "y": 370,
+          "grid_x": 2,
+          "grid_y": 2
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 110,
+          "x": 110,
+          "prev_y": 370,
+          "y": 360,
+          "grid_x": 2,
+          "grid_y": 2
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 110,
+          "x": 100,
+          "prev_y": 360,
+          "y": 360,
+          "grid_x": 2,
+          "grid_y": 2
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 100,
+          "x": 100,
+          "prev_y": 360,
+          "y": 370,
+          "grid_x": 2,
+          "grid_y": 2
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 100,
+          "x": 100,
+          "prev_y": 360,
+          "y": 410,
+          "grid_x": 2,
+          "grid_y": 1
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 100,
+          "x": 110,
+          "prev_y": 410,
+          "y": 410,
+          "grid_x": 2,
+          "grid_y": 1
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 110,
+          "x": 110,
+          "prev_y": 410,
+          "y": 400,
+          "grid_x": 2,
+          "grid_y": 1
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 110,
+          "x": 100,
+          "prev_y": 400,
+          "y": 400,
+          "grid_x": 2,
+          "grid_y": 1
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 110,
+          "x": 60,
+          "prev_y": 400,
+          "y": 400,
+          "grid_x": 1,
+          "grid_y": 1
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 60,
+          "x": 60,
+          "prev_y": 400,
+          "y": 410,
+          "grid_x": 1,
+          "grid_y": 1
+        },
+        {
+          "color": "seagreen",
+          "thickness": 2,
+          "prev_x": 60,
+          "x": 70,
+          "prev_y": 410,
+          "y": 410,
+          "grid_x": 1,
+          "grid_y": 1
+        }
+      ],
+      "_trace_style": "default",
+      "_trace_color": "seagreen",
+      "__id": 2,
+      "model": "classic",
+      "initial_position": [
+        1,
+        1
+      ],
+      "possible_initial_positions": [
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "walls": {},
+  "small_tiles": false,
+  "rows": 10,
+  "cols": 10,
+  "description": [
+    "A simple, empty world, ready for Reeborg to explore."
+  ]
+}
