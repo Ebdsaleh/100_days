@@ -64,7 +64,8 @@ def deal(num: int, recipient: str):
 
 
 def show_hand(hand):
-    print(f"{hand}")
+    if not hands_played:
+        print(f"{hand}, current score: {check_hand_value(hand)}")
 
 
 def show_dealer_hand():
@@ -98,7 +99,12 @@ def calculate_score():
     player_wins = False
     is_draw = False
     hands_played = True
-    update_screen()
+    clear_screen()
+    print(logo)
+    print(f"Dealer's final hand: {dealer_hand}, final score: " +
+          f"{dealer_score}")
+    print(f"Player's final hand: {player_hand}, final score: " +
+          f"{player_score}")
     if player_score > 21 or dealer_score == 21:
         player_wins = False
     elif dealer_score > 21 or player_score == 21:
