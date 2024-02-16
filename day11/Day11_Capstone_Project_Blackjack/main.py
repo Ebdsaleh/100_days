@@ -33,7 +33,7 @@ def clear_screen():
         os.system('cls')
 
 
-def refresh_screen():
+def update_screen():
     clear_screen()
     print(logo)
     print("Dealer's hand:")
@@ -98,7 +98,7 @@ def calculate_score():
     player_wins = False
     is_draw = False
     hands_played = True
-    refresh_screen()
+    update_screen()
     if player_score > 21 or dealer_score == 21:
         player_wins = False
     elif dealer_score > 21 or player_score == 21:
@@ -122,7 +122,7 @@ def calculate_score():
 
 def play_another_card():
     while True:
-        refresh_screen()
+        update_screen()
         another_card = input("Do you want another card? 'y' or 'n': ")
         if another_card[0] == 'y':
             hit()
@@ -149,7 +149,7 @@ def game():
     show_dealer_hand()
     if not check_for_blackjack():
         play_another_card()
-        if check_hand_value(dealer_hand) < 17:
+        while check_hand_value(dealer_hand) < 17:
             deal(1, 'dealer')
     calculate_score()
 
