@@ -27,15 +27,17 @@ def check_for_duplicates(opt_a, opt_b):
         return False
 
 
-def check_answer(choice, opt_a, opt_b):
+def check_answer(choice, opt_a, opt_b, most_followers):
     if choice[0] == 'A':
         # check the data
         if compare(opt_a, opt_b):
+            most_followers.append(opt_a)
             return True
         else:
             return False
     elif choice[0] == 'B':
         if not compare(opt_a, opt_b):
+            most_followers.append(opt_b)
             return True
         else:
             return False
@@ -66,12 +68,19 @@ def game():
     vs = art.vs
     game_end = False
     score = 0
+    most_followers = []
+    opt_a = {}
+    opt_b = {}
     while not game_end:
         clear_screen()
-        opt_a = select_option(data)
+        if most_followers == []:
+            opt_a = select_option(data)
+        else:
+            opt_a = most_followers[-1]
         opt_b = select_option(data)
         if check_for_duplicates(opt_a, opt_b):
             continue
+
         print(logo)
         if score > 0:
             print(f"You're right! Current score: {score}")
@@ -80,7 +89,8 @@ def game():
         print(f"Against B: {form_question(opt_b)}")
         choice = input("Who has more followers? Type 'A' or 'B': ").upper()
         # check input
-        if not check_answer(choice, opt_a, opt_b):
+        if not check_answer(choice, opt_a, opt_b, most_followers):
+
             game_end = True
         else:
             score += 1
