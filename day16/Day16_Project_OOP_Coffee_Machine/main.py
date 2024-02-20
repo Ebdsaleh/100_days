@@ -1,3 +1,10 @@
+# main.py
+# Day 16 Project - OOP Coffee Machine
+"""
+This version of the coffee machine is modulized and more concise.
+Angela Yu provided the module files in the course resources.
+We weren't to change the modules, and only focus on this file.
+"""
 from menu import Menu, MenuItem
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
@@ -14,12 +21,12 @@ def clear_screen():
 
 
 def main():
+    power_on = True
     clear_screen()
     coffee_machine = CoffeeMaker()
     money_machine = MoneyMachine()
     menu = Menu()
     drinks = menu.get_items()
-    power_on = True
     while power_on:
         user_input = input(f"What would you like? {drinks}: ")
         if user_input == "report":
@@ -32,7 +39,6 @@ def main():
             if (coffee_machine.is_resource_sufficient(drink) and
                money_machine.make_payment(drink.cost)):
                 coffee_machine.make_coffee(drink)
-
     exit()
 
 
